@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const links = [
   { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
+  { label: "GIS Projects", href: "#gis-projects" },
   { label: "Skills", href: "#skills" },
   { label: "Publications", href: "#publications" },
   { label: "Certifications", href: "#certifications" },
@@ -27,6 +28,12 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
+          <Link
+            to="/shiny-apps"
+            className="text-sm font-medium bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors"
+          >
+            R Shiny Apps
+          </Link>
         </div>
 
         {/* Mobile toggle */}
@@ -49,6 +56,13 @@ const Navbar = () => {
                   {l.label}
                 </a>
               ))}
+              <Link
+                to="/shiny-apps"
+                onClick={() => setOpen(false)}
+                className="text-sm font-medium bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors text-center"
+              >
+                R Shiny Apps
+              </Link>
             </div>
           </motion.div>
         )}

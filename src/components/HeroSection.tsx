@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Linkedin, Github, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 import profileImg from "@/assets/kern-profile.png";
 
 const HeroSection = () => {
@@ -19,7 +20,7 @@ const HeroSection = () => {
             transition={{ duration: 0.7 }}
           >
             <p className="text-primary-foreground/70 font-body text-sm tracking-widest uppercase mb-4">
-              Epidemiologist · Data Analyst · R Shiny Developer
+              Epidemiologist · Data Analyst · GIS Specialist
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-primary-foreground leading-tight mb-6">
               Kern Rocke
@@ -28,10 +29,13 @@ const HeroSection = () => {
               Researcher and international consultant specializing in public health data science, 
               spatial epidemiology, and interactive dashboard development across the Caribbean.
             </p>
-            <div className="flex items-center gap-4 mb-8">
-              <a href="#projects" className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground font-display font-semibold px-6 py-3 rounded-lg hover:opacity-90 transition-opacity">
-                View My Work
+            <div className="flex items-center gap-4 flex-wrap mb-8">
+              <a href="#gis-projects" className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground font-display font-semibold px-6 py-3 rounded-lg hover:opacity-90 transition-opacity">
+                GIS Projects
               </a>
+              <Link to="/shiny-apps" className="inline-flex items-center gap-2 border border-primary-foreground/30 text-primary-foreground font-display font-medium px-6 py-3 rounded-lg hover:bg-primary-foreground/10 transition-colors">
+                R Shiny Apps
+              </Link>
               <a href="#contact" className="inline-flex items-center gap-2 border border-primary-foreground/30 text-primary-foreground font-display font-medium px-6 py-3 rounded-lg hover:bg-primary-foreground/10 transition-colors">
                 Get In Touch
               </a>
