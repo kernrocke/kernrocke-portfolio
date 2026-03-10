@@ -1,21 +1,72 @@
 import { motion } from "framer-motion";
 
+const levelColor = (level: string) => {
+  if (level.startsWith("Advance")) return "bg-primary/20 text-primary border-primary/30";
+  if (level.startsWith("Intermediary")) return "bg-accent/15 text-accent border-accent/30";
+  return "bg-muted text-muted-foreground border-border";
+};
+
 const skillCategories = [
   {
-    title: "Data & Analytics",
-    skills: ["R / R Shiny", "Stata", "SPSS", "Python", "SQL", "Statistical Modeling", "Survival Analysis", "SPC/QCC Charts"],
+    title: "Statistical Analysis & Data Management",
+    skills: [
+      { name: "STATA", level: "Advance" },
+      { name: "SPSS", level: "Intermediary" },
+      { name: "R / R Shiny", level: "Intermediary" },
+      { name: "Python", level: "Basic" },
+      { name: "Azure Data Studio", level: "Basic" },
+    ],
   },
   {
-    title: "Geospatial & GIS",
-    skills: ["ArcGIS", "QGIS", "Leaflet", "Spatial Epidemiology", "Shapefile Analysis", "Geocoding", "Survey123"],
+    title: "Spatial Management & Analysis",
+    skills: [
+      { name: "ArcGIS", level: "Advance" },
+      { name: "QGIS", level: "Intermediary" },
+      { name: "PostGRES", level: "Intermediary" },
+    ],
   },
   {
-    title: "Public Health",
-    skills: ["Epidemiology", "Vaccine Safety (ESAVI)", "Cancer Registry", "NCDs", "HEARTS Programme", "PRISMA/Systematic Reviews"],
+    title: "Data Collection",
+    skills: [
+      { name: "REDCap", level: "Intermediary" },
+      { name: "Survey123", level: "Advance" },
+      { name: "EpiCollect", level: "Advance" },
+      { name: "EpiInfo 7", level: "Advance" },
+      { name: "Epi Data", level: "Intermediary" },
+      { name: "QuestionPro", level: "Intermediary" },
+    ],
   },
   {
-    title: "Tools & Platforms",
-    skills: ["REDCap", "DHIS2", "CanReg5", "HL7 FHIR", "Git/GitHub", "shinydashboard", "Plotly", "Officer/PowerPoint"],
+    title: "Project Management",
+    skills: [
+      { name: "Microsoft Office Suite", level: "Advance" },
+      { name: "Open Project", level: "Intermediary" },
+      { name: "Project Libre", level: "Intermediary" },
+    ],
+  },
+  {
+    title: "Reference & Systematic Review",
+    skills: [
+      { name: "EndNote", level: "Advance" },
+      { name: "Zotero", level: "Advance" },
+      { name: "Reference Manager", level: "Intermediary" },
+      { name: "RevMan", level: "Intermediary" },
+      { name: "Archie", level: "Beginner" },
+    ],
+  },
+  {
+    title: "360 Imagery",
+    skills: [
+      { name: "Pano2VR", level: "Advance" },
+      { name: "Google Data Studio", level: "Advance" },
+    ],
+  },
+  {
+    title: "Health Information Systems",
+    skills: [
+      { name: "DHIS2", level: "Intermediary" },
+      { name: "Postman", level: "Beginner" },
+    ],
   },
 ];
 
