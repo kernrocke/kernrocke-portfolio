@@ -3,20 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
     <title>Kern Rocke | Epidemiologist & R Shiny Developer</title>
     <meta name="description" content="Portfolio of Kern Rocke — Epidemiologist, Data Analyst, and R Shiny Developer specializing in public health dashboards across the Caribbean." />
     <meta name="author" content="Kern Rocke" />
-
     <meta property="og:title" content="Kern Rocke | Epidemiologist & R Shiny Developer" />
     <meta property="og:description" content="Interactive R Shiny dashboards for public health surveillance across the Caribbean." />
     <meta property="og:type" content="website" />
-
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@Lovable" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <script>
+      (function(){
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
   </head>
-
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
