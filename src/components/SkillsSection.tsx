@@ -94,7 +94,7 @@ const SkillsSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-16">
           {skillCategories.map((cat, i) => (
             <motion.div
               key={cat.title}
@@ -107,8 +107,9 @@ const SkillsSection = () => {
               <h3 className="font-display font-semibold text-foreground mb-4">{cat.title}</h3>
               <div className="flex flex-wrap gap-2">
                 {cat.skills.map((skill) => (
-                  <span key={skill} className="bg-primary/10 text-primary text-xs font-medium px-3 py-1.5 rounded-md">
-                    {skill}
+                  <span key={skill.name} className={`text-xs font-medium px-3 py-1.5 rounded-md border ${levelColor(skill.level)}`}>
+                    {skill.name}
+                    <span className="ml-1 opacity-70">• {skill.level}</span>
                   </span>
                 ))}
               </div>
