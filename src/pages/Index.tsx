@@ -5,6 +5,7 @@ import GISSection from "@/components/GISSection";
 import SkillsSection from "@/components/SkillsSection";
 import PublicationsSection from "@/components/PublicationsSection";
 import CertificationsSection from "@/components/CertificationsSection";
+import AwardsSection from "@/components/AwardsSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import ContactSection from "@/components/ContactSection";
 
