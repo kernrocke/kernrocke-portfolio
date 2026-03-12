@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { GraduationCap, MapPin, Globe } from "lucide-react";
+import { GraduationCap, MapPin, Globe, ExternalLink, Users } from "lucide-react";
 
 const education = [
   { degree: "PhD in Epidemiology", school: "UWI, Cave Hill Campus, Barbados", period: "2019 – Present", focus: "Spatial Epidemiology & Geoinformatics" },
