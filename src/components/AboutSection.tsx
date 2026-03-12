@@ -41,9 +41,18 @@ const AboutSection = () => {
               and the World Bank. I specialize in building interactive data dashboards and analytical tools using R Shiny 
               to transform complex health data into actionable insights.
             </p>
-            <p className="text-muted-foreground leading-relaxed mb-6">
+            <p className="text-muted-foreground leading-relaxed mb-4">
               I have worked across Barbados, Jamaica, Trinidad & Tobago, Guyana, the United States, and Switzerland — 
               bringing data-driven solutions to public health challenges throughout the region.
+            </p>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              I am a member of the executive team of{" "}
+              <a href="https://caribbean.cochrane.org" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline inline-flex items-center gap-1">
+                Cochrane Caribbean <ExternalLink size={12} />
+              </a>{" "}
+              and a certified Cochrane Author Trainer (2015, 2020, 2022, 2024, 2026). I have facilitated 
+              author-based workshops held with the UWI and CARPHA, supported by the Caribbean Branch of the 
+              US Cochrane Centre.
             </p>
 
             <div className="flex flex-wrap gap-3">
@@ -52,6 +61,9 @@ const AboutSection = () => {
               </span>
               <span className="inline-flex items-center gap-2 bg-muted px-4 py-2 rounded-lg text-sm font-medium text-foreground">
                 <Globe size={14} className="text-accent" /> 6 Countries
+              </span>
+              <span className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-lg text-sm font-medium text-primary">
+                <Users size={14} /> Cochrane Caribbean
               </span>
             </div>
           </motion.div>
