@@ -19,6 +19,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/shiny-apps" element={<ShinyApps />} />
+          <Route path="/vaccine-safety" element={<VaccineSafety />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
