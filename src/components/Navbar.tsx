@@ -43,6 +43,12 @@ const Navbar = () => {
           >
             R Shiny Apps
           </Link>
+          <Link
+            to="/vaccine-safety"
+            className="text-sm font-medium bg-accent text-accent-foreground px-4 py-2 rounded-lg hover:bg-accent/90 transition-colors"
+          >
+            Vaccine Safety
+          </Link>
         </div>
 
         {/* Mobile toggle */}
@@ -75,6 +81,13 @@ const Navbar = () => {
                 className="text-sm font-medium bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors text-center"
               >
                 R Shiny Apps
+              </Link>
+              <Link
+                to="/vaccine-safety"
+                onClick={() => setOpen(false)}
+                className="text-sm font-medium bg-accent text-accent-foreground px-4 py-2 rounded-lg hover:bg-accent/90 transition-colors text-center"
+              >
+                Vaccine Safety
               </Link>
             </div>
           </motion.div>
